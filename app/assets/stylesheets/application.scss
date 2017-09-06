@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ // Custom bootstrap variables must be set or imported *before* bootstrap.
+@import "bootstrap";
+
+
+* {
+  border: 1px solid yellow;
+}
+
+// .header, .skills, .contact {
+//   background-color: black;
+//   color: white;
+// }
+
+// .logo {
+//   width: 100px;
+// }
+
+.profile  {
+  width: 125%;
+}
+
+.rectangle {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  line-height: 150px;
+  margin-top: 150px;
+  transform:  rotate(45deg);
+	background: red;
+}
+
+#logo {
+  position: absolute;
+  transform:  rotate(-45deg);
+  left: 22px;
+  top: -4px;
+}
+
+.contactForm {
+	min-width: 65%;
+	min-height: 150px;
+	margin-left: 15%;
+	resize: none;
+	padding: 12px 20px;
+	border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-family: Arial;
+	font-size: 16px;
+	color: #c0c0c0;
+}
+
+.button {
+	margin-left: 15%;
+  border: none;
+  border-radius: 4px;
+	padding: 10px 24px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #e8e8e8;
+}
+
+.social {
+  width: 10%;
+  margin: auto;
+}
