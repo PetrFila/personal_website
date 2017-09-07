@@ -18,9 +18,9 @@
 @import "bootstrap";
 
 
-* {
-  border: 1px solid yellow;
-}
+// * {
+//   border: 1px solid yellow;
+// }
 
 // .header, .skills, .contact {
 //   background-color: black;
@@ -52,28 +52,10 @@
   top: -4px;
 }
 
-.contactForm {
-	min-width: 65%;
-	min-height: 150px;
-	margin-left: 15%;
-	resize: none;
-	padding: 12px 20px;
-	border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-family: Arial;
-	font-size: 16px;
-	color: #c0c0c0;
-}
 
-.button {
-	margin-left: 15%;
-  border: none;
-  border-radius: 4px;
-	padding: 10px 24px;
-	font-size: 16px;
-	font-weight: bold;
-	background-color: #e8e8e8;
+
+.hidden {
+  display: none;
 }
 
 .social {
