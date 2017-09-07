@@ -3,11 +3,29 @@
     <%= render "/layouts/header" %>
     <h1 class="contact">Contact</h1>
   </div>
+
   <div class="container">
-    <form>
-      <textarea class="contactForm">Write your message here...</textarea>
-      <button type="submit" class="button">Submit</button>
-    </form>
+    <%= form_for @contact, url: one_for_all_index_path do |f| %>
+      <%= f.label :name %><br>
+      <%= f.text_field :name, required: true %>
+
+      <br>
+
+      <%= f.label :email %><br>
+      <%= f.email_field :email, required: true %>
+
+      <br>
+
+      <%= f.label :message %><br>
+      <%= f.text_area :message, as: :text %>
+
+      <div class="hidden">
+        <%= f.label :nickname %><br>
+        <%= f.text_field :nickname, hint: "leave this field blank" %>
+      </div>
+
+      <%= f.submit "Send message", class: "button" %>
+    <%end%>
   </div>
 </div>
 
