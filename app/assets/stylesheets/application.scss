@@ -21,6 +21,16 @@
 // * {
 //   border: 1px solid yellow;
 // }
+
+
+body {
+  font-size: 20px;
+}
+
+.about, .skills, .projects, .contact {
+  margin-bottom: 50px;
+}
+
 // INDEX
 .bg-black {
   background-color: black;
@@ -79,12 +89,50 @@
 
 
 // ABOUT
-.about {
-  margin-top: 150px;
+.bg-about {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-color: #ccc;
+}
+
+
+
+p, ul {
+  text-align: justify;
+}
+
+// SKILLS
+.bg-skills {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background: linear-gradient(#ccc, #7C7D95);
+}
+
+// PROJECTS
+.bg-projects {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background: linear-gradient(#7C7D95, #664F78 );
+}
+
+.codepen:hover {
+    opacity: 0.5;
+    background-color: white;
+}
+
+.github:hover {
+    opacity: 0.5;
+    background-color: white;
 }
 
 
 // CONTACT
+.bg-contact{
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background: linear-gradient(#664F78, #A43C5B);
+}
+
 .hidden {
   display: none;
 }
