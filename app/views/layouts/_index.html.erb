@@ -1,21 +1,22 @@
 <!--INDEX  -->
-
+<div class="bg-black container_fluid">
   <div class="container">
     <div class="row">
 
-      <div class="col-lg-5">
-        <div class="rectangle">
-          <div id="logo">
-            <img class="logo" src=".\images\My Logo5.png" alt="" class="logo">
-          </div>
-        </div>
-
+      <div class="col-sm-12 col-lg-6">
+        <div class="rectangle"></div>
+        <div class="rectangle2"></div>
+        <div class="rectangle3"></div>
+          <%= render "layouts/header" %>
         <h1 class="name">Petr Fila</h1>
-        <p class="index">web developer?</p>
+        <p class="index">a web developer?</p>
 
       </div>
-      <div class="col-lg-7">
-        <img class="profile" src=".\images\P1010410.png" alt="">
+      <div class="col-sml-12 col-lg-6">
+
+        <%= image_tag "profile_photo2.png", class: "profile_photo" %>
+
       </div>
     </div>
   </div>
+</div>

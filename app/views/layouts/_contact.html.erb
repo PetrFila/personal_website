@@ -1,41 +1,41 @@
 <div class="contact container-fluid">
   <div class="container">
-    <%= render "/layouts/header" %>
+    <%= render "layouts/header" %>
     <h1 class="contact">Contact</h1>
   </div>
 
   <div class="container">
-    <form action="">
-      <div class="form-group">
-          <%= form_for @contact, url: one_for_all_index_path do |f| %>
-          <%= f.label :name %><br>
-          <%= f.text_field :name, class:"form-control", required: true %>
+    <div class="row justify-content-md-center">
+      <div class="col-lg-8">
+        <div class="form-group">
+            <%= form_for @contact, url: one_for_all_index_path do |f| %>
+            <%= f.label :name %><br>
+            <%= f.text_field :name, required: true, class:"form-control" %>
+        </div>
+
+        <div class="form-group">
+            <%= f.label :email  %><br>
+            <%= f.email_field :email, required: true, class: "form-control" %>
+        </div>
+
+        <div class="form-group">
+            <%= f.label :message %><br>
+            <%= f.text_area :message, as: :text, class:"form-control" %>
+
+            <div class="hidden">
+              <%= f.label :nickname %><br>
+              <%= f.text_field :nickname, hint: "leave this field blank" %>
+            </div>
+        </div>
+        <%= f.submit "Send message", class: "btn btn-secondary" %>
+        <% end %>
       </div>
-
-      <div class="form-group">
-          <%= f.label :email  %><br>
-          <%= f.email_field :email, class: "form-control", required: true %>
-      </div>
-
-      <div class="form-group">
-          <%= f.label :message %><br>
-          <%= f.text_area :message, as: :text, class:"form-control" %>
-
-          <div class="hidden">
-            <%= f.label :nickname %><br>
-            <%= f.text_field :nickname, hint: "leave this field blank" %>
-          </div>
-      </div>
-      <%= f.submit "Send message", class: "btn btn-secondary" %>
-    </form>
-  </div>
-
-
-    <%end%>
+    </div>
   </div>
 </div>
 
-<div class="container">
+
+<!-- <div class="container">
   <div class="col-12">
     <div class="row">
 
@@ -44,4 +44,4 @@
 
     </div>
   </div>
-</div>
+</div> -->

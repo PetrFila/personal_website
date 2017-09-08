@@ -5,11 +5,13 @@ class OneForAllController < ApplicationController
   end
 
   def create
-    
+
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
-      flash.now[:error] = nil
+      # flash.now[:error] = nil
+      flash.keep[:notice] = "Success."
+      redirect_to root_path#, flash: {notice: "Successfully sent message!"}
     else
       flash.now[:error] = "Cannot send message."
       render :new
