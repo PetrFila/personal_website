@@ -1,9 +1,9 @@
 
-  <div class="bg-contact container">
+  <div class="bg-contact container-fluid">
 
 
 
-    <div class="container col-lg-11">
+    <div class="container col-lg-7">
       <%= image_tag "logo-white.png", class: "logo"%>
       <h1 class="contact">Contact</h1>
       <div class="row justify-content-md-center">
@@ -23,10 +23,10 @@
               <%= f.label :message %><br>
               <%= f.text_area :message, as: :text, class:"form-control" %>
 
-              <div class="hidden">
+              <!-- <div class="hidden">
                 <%= f.label :nickname %><br>
                 <%= f.text_field :nickname, hint: "leave this field blank" %>
-              </div>
+              </div> -->
           </div>
           <%= f.submit "Send message", class: "btn btn-secondary" %>
           <% end %>
@@ -36,10 +36,10 @@
 
 
 
-    <div class="container col-lg-6">
+    <div class="container col-lg-3">
       <div class="row">
-        <div class="col-lg-6"><%= image_tag "linked_in_transparent.png"%></div>
-        <div class="col-lg-6"><%= image_tag "github-icon_transparent.png"%></div>
+        <div class="col-lg-6"><a href="https://www.linkedin.com/in/petr-fila/" target="_blank" alt="Linked In"><%= image_tag "linked_in_transparent.png", class:"img-fluid linkedin"%></a></div>
+        <div class="col-lg-6"><a href="https://github.com/PetrFila" target="_blank" alt="GitHub"><%= image_tag "github-icon_transparent.png", class:"img-fluid github_small"%></a></div>
       </div>
     </div>
 
