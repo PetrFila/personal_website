@@ -49,25 +49,25 @@ body {
 
 .rectangle {
   position: absolute;
-  width: 60%;
+  width: 300px;
   height: 110px;
-  transform: translate(140px,100px) rotate(45deg);
+  transform: translate(60px,120px) rotate(45deg);
 	background: linear-gradient(to right, transparent, #7C7D95);
 }
 
 .rectangle2 {
   position: absolute;
-  width: 50%;
+  width: 200px;
   height: 110px;
-  transform: translate(280px,100px) rotate(45deg);
+  transform: translate(220px,140px) rotate(45deg);
 	background: linear-gradient(to left, #664F78, black);
 }
 
 .rectangle3 {
   position: absolute;
-  width: 40%;
+  width: 150px;
   height: 110px;
-  transform: translate(420px,100px) rotate(45deg);
+  transform: translate(340px,140px) rotate(45deg);
 	background: linear-gradient(to left, #A43C5B, black);
   z-index: 120;
 }
@@ -138,6 +138,10 @@ p, ul {
   margin-top: 50px;
 }
 
+.social {
+  margin-top: 50px;
+}
+
 .github_small:hover {
     opacity: 0.5;
     background-color: white;
@@ -155,72 +159,77 @@ p, ul {
 
 
 
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
 
-    .rectangle {
-      position: absolute;
-      width: 60%;
-      height: 60px;
-      transform: translate(10px,100px) rotate(45deg);
-    	background: linear-gradient(to right, transparent, #7C7D95);
-    }
 
-    .rectangle2 {
-      position: absolute;
-      width: 50%;
-      height: 60px;
-      transform: translate(80px,100px) rotate(45deg);
-    	background: linear-gradient(to left, #664F78, black);
-    }
+// // Small devices (portrait phones, 320px and less)
+// @media (min-width: 576px) {
+//
+//     .rectangle {
+//       position: absolute;
+//       width: 60%;
+//       height: 60px;
+//       transform: translate(-50px,100px) rotate(45deg);
+//     	background: linear-gradient(to right, transparent, #7C7D95);
+//     }
+//
+//     .rectangle2 {
+//       position: absolute;
+//       width: 50%;
+//       height: 60px;
+//       transform: translate(80px,100px) rotate(45deg);
+//     	background: linear-gradient(to left, #664F78, black);
+//     }
+//
+//     .rectangle3 {
+//       position: absolute;
+//       width: 40%;
+//       height: 60px;
+//       transform: translate(150px,100px) rotate(45deg);
+//     	background: linear-gradient(to left, #A43C5B, black);
+//     }
+//
+//     .name {
+//       margin-top: 300px;
+//     }
+//
+//     .profile_photo2 {
+//       width: 80%;
+//       margin: 0;
+//     }
+//
+// }
 
-    .rectangle3 {
-      position: absolute;
-      width: 40%;
-      height: 60px;
-      transform: translate(150px,100px) rotate(45deg);
-    	background: linear-gradient(to left, #A43C5B, black);
-    }
-
-    .name {
-      margin-top: 300px;
-    }
-
-    .profile_photo2 {
-      width: 80%;
-      margin: 0;
-    }
-
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-
-  .rectangle {
-    position: absolute;
-    width: 60%;
-    height: 60px;
-    transform: translate(10px,100px) rotate(45deg);
-    background: linear-gradient(to right, transparent, #7C7D95);
-  }
-
-  .rectangle2 {
-    position: absolute;
-    width: 50%;
-    height: 60px;
-    transform: translate(80px,100px) rotate(45deg);
-    background: linear-gradient(to left, #664F78, black);
-  }
-
-  .rectangle3 {
-    position: absolute;
-    width: 40%;
-    height: 60px;
-    transform: translate(150px,100px) rotate(45deg);
-    background: linear-gradient(to left, #A43C5B, black);
-  }
-
-  .profile_photo2  {
-    width: 100%;
-  }
-}
+// Medium devices (tablets, 768px and less)
+// @media (min-width: 576px) and (max-width: 767px) {
+//
+//   .rectangle {
+//     position: absolute;
+//     width: 45%;
+//     height: 80px;
+//     transform: translate(90px,100px) rotate(45deg);
+//     background: linear-gradient(to right, transparent, #7C7D95);
+//   }
+//
+//   .rectangle2 {
+//     position: absolute;
+//     width: 35%;
+//     height: 80px;
+//     transform: translate(220px,100px) rotate(45deg);
+//     background: linear-gradient(to left, #664F78, black);
+//   }
+//
+//   .rectangle3 {
+//     position: absolute;
+//     width: 25%;
+//     height: 80px;
+//     transform: translate(350px,100px) rotate(45deg);
+//     background: linear-gradient(to left, #A43C5B, black);
+//   }
+//
+//   .profile_photo2  {
+//     width: 100%;
+//   }
+//
+//
+//
+// }
