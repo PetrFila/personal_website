@@ -27,8 +27,53 @@ body {
   font-size: 20px;
 }
 
-.about, .skills, .projects, .contact {
-  margin-bottom: 50px;
+.about, .skills-heading, .projects, .contact {
+  margin-bottom: 70px;
+}
+
+.about::after {
+  content: " ";
+  position:absolute;
+  width: 35%;
+  height: 2px;
+  display: block;
+  background-color: black;
+  background: linear-gradient(to right, #000, transparent);
+  margin-left: 15px;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.skills-heading::after {
+  content: " ";
+  position:absolute;
+  width: 35%;
+  height: 2px;
+  display: block;
+  background-color: black;
+  background: linear-gradient(to right, #000, transparent);
+  margin-left: 15px;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.projects::after {
+  content: " ";
+  position:absolute;
+  width: 35%;
+  height: 2px;
+  display: block;
+  background-color: black;
+  background: linear-gradient(to right, #000, transparent);
+  margin-left: 15px;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 // INDEX
@@ -44,7 +89,6 @@ body {
 
 .profile_photo  {
   width: 100%;
-  //margin-left: 16%;
 }
 
 .rectangle {
@@ -75,11 +119,11 @@ body {
 
 .name {
   margin-top: 400px;
-  font-family: Arial;
+  font-family: Calibri;
   letter-spacing: 6px;
   text-align: center;
-  font-size: 60px;
-  font-weight: 900;
+  font-size: 90px;
+  font-weight: bold;
 }
 
 .index {
@@ -108,6 +152,23 @@ p, ul {
   padding-bottom: 50px;
   background: linear-gradient(#ccc, #7C7D95);
 }
+
+ul {
+  margin-left: 10%;
+  margin-right: 15%;
+}
+
+li {
+ padding:8px;
+ text-align: justify;
+ text-decoration: none;
+ border-left: 1px solid black;
+}
+
+.skills {
+  font-weight: bold;
+}
+
 
 // PROJECTS
 .bg-projects {
